@@ -19,3 +19,47 @@ table {
     width: 100%;
     border: 2px solid #B0B0B0;
 }
+
+#filter, #sort {
+    width: 33%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 5px 0;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 150px);
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="number"] {
+    width: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="button"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sort-filter-settings {
+    margin: 0 1%;
+    display: flex;
+}

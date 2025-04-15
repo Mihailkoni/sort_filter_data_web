@@ -23,3 +23,9 @@ let createTable = (data, idTable) => {
         table.append(tr);
     });
 }
+
+//очистка таблицы
+let clearTable = (idTable) => {
+    let table = document.getElementById(idTable);
+    table.innerHTML = "";
+}
