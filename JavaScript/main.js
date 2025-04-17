@@ -60,3 +60,22 @@ let changeNextSelect = (nextSelectId, curSelect) => {
         nextSelect.disabled = true;
     }
 }
+
+// проверочное
+const sumTwoDigitNumbers = (...strings) => {
+    let sum = 0
+    strings.forEach(str => {
+        const strArr = str.split(' ')
+        strArr.forEach(part => {
+            if(/^-?\d{2}$/.test(part)){
+                const num = parseInt(part,10);
+                if((num >= 10 && num <= 99) || (num <= -10 && num >= -99)){
+                    sum += num
+                }
+            }
+        })
+    })
+    return sum
+}
+
+alert(sumTwoDigitNumbers("12 word 01"));
