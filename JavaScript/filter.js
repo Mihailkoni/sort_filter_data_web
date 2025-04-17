@@ -19,7 +19,7 @@ let dataFilter = (dataForm) => {
         let valInput = item.value;
 
         if (item.type == "text") {
-            valInput = valInput.toLowerCase();
+            valInput = valInput.toLowerCase().trim();
         } else if (item.type == "number") {
             valInput = Number(valInput);
         }
